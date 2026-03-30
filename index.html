@@ -12,53 +12,96 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: #020617;
+  background: radial-gradient(circle at top, #0f172a, #020617);
   color: #e2e8f0;
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1100px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 h1 {
-  font-size: 42px;
-  background: linear-gradient(to right,#38bdf8,#22c55e);
+  font-size: 56px;
+  background: linear-gradient(to right, #38bdf8, #22c55e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.hero {
+  text-align: center;
+}
+
+.hero p {
+  color: #94a3b8;
+}
+
+.badges span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.cta a {
+  background: linear-gradient(135deg, #22c55e, #38bdf8);
+  color: black;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 h2 {
-  margin-top: 50px;
-  border-left: 3px solid #38bdf8;
+  margin-top: 80px;
+  border-left: 4px solid #38bdf8;
   padding-left: 10px;
 }
 
-a {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: rgba(30,41,59,0.6);
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.4s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card a {
   color: #38bdf8;
   text-decoration: none;
 }
 
-.card {
-  background: #0f172a;
-  padding: 18px;
-  border-radius: 12px;
-  margin-top: 15px;
-}
-
-ul {
-  padding-left: 18px;
-}
-
 .badge {
   display: inline-block;
-  background: #020617;
-  padding: 8px 12px;
-  border-radius: 8px;
-  margin: 5px;
+  background: #1e293b;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin: 6px;
 }
 
+.contact {
+  text-align: center;
+  margin-top: 80px;
+}
 </style>
 </head>
 
@@ -66,81 +109,97 @@ ul {
 
 <div class="container">
 
-<h1>Chirag Rathod</h1>
-<p>Mobile Architect • Senior Flutter Engineer • System Design Specialist</p>
+<!-- HERO -->
+<div class="hero">
+  <h1>Chirag Rathod</h1>
+  <p><b>Mobile Architect • Senior Flutter Engineer • System Design Specialist</b></p>
 
-<p>
-9+ years of experience building <b>scalable mobile systems</b> used by <b>100K+ users</b>.  
-Expert in <b>real-time apps, offline-first architecture, and IoT (BLE/NFC)</b>.
-</p>
+  <div class="badges">
+    <span>🚀 9+ Years Experience</span>
+    <span>📱 20+ Apps</span>
+    <span>👥 100K+ Users</span>
+    <span>⚡ Real-Time Systems</span>
+  </div>
+
+  <p>
+    I build <b>scalable mobile systems</b> focused on performance, real-time data, and reliability.  
+    Led teams of 15 engineers and delivered production apps generating <b>₹1L+ monthly impact</b>.
+  </p>
+
+  <div class="cta">
+    <a href="mailto:rathodchirag090@gmail.com">🚀 Hire / Interview Me</a>
+  </div>
+</div>
 
 <!-- IMPACT -->
 <h2>🚀 Key Impact</h2>
-<ul>
-<li>20+ production apps delivered</li>
-<li>100K+ users handled</li>
-<li>10K+ downloads</li>
-<li>₹1L+ monthly revenue impact</li>
-<li>Led team of 15 developers</li>
-<li>Built real-time + offline-first systems</li>
-</ul>
+
+<div class="grid">
+  <div class="card">20+ Production Apps Delivered</div>
+  <div class="card">100K+ Users Handled</div>
+  <div class="card">10K+ Downloads</div>
+  <div class="card">₹1L+ Monthly Revenue Impact</div>
+  <div class="card">Led Team of 15 Engineers</div>
+  <div class="card">Real-Time + Offline Systems</div>
+</div>
 
 <!-- APPS -->
 <h2>📱 Live Applications</h2>
 
+<div class="grid">
+
 <div class="card">
-<b>Onkyo Controller</b>  
-<br>
+<b>Onkyo Controller</b><br>
 <a href="https://play.google.com/store/apps/details?id=com.onkyo.jp.onkyocontroller" target="_blank">Android</a> |
 <a href="https://apps.apple.com/in/app/onkyo-controller/id1110608712" target="_blank">iOS</a>
 </div>
 
 <div class="card">
-<b>Integra Remote</b>  
-<br>
+<b>Integra Remote</b><br>
 <a href="https://play.google.com/store/apps/details?id=com.onkyo.integraRemote4A" target="_blank">Android</a>
 </div>
 
 <div class="card">
-<b>INTIX Platform</b>  
-<br>
+<b>INTIX Platform</b><br>
 <a href="https://play.google.com/store/apps/details?id=com.intix" target="_blank">Android</a> |
 <a href="https://apps.apple.com/in/app/intix/id1451785261" target="_blank">iOS</a>
 </div>
 
 <div class="card">
-<b>SODA Camera</b>  
-<br>
+<b>SODA Camera</b><br>
 <a href="https://play.google.com/store/apps/details?id=com.snowcorp.soda.android" target="_blank">Android</a> |
 <a href="https://apps.apple.com/in/app/soda-natural-beauty-camera/id1437880869" target="_blank">iOS</a>
 </div>
 
 <div class="card">
-<b>Cityside Sports</b>  
-<br>
+<b>Cityside Sports</b><br>
 <a href="https://play.google.com/store/apps/details?id=com.cityside" target="_blank">Android</a> |
 <a href="https://apps.apple.com/in/app/cityside-sports/id1281203254" target="_blank">iOS</a>
 </div>
 
-<!-- CORE EXPERTISE -->
+</div>
+
+<!-- CORE -->
 <h2>🛠 Core Expertise</h2>
 
-<div class="badge">Flutter (7+ yrs)</div>
-<div class="badge">Mobile Architecture</div>
-<div class="badge">System Design</div>
-<div class="badge">Clean Architecture</div>
-<div class="badge">Real-Time Systems</div>
-<div class="badge">Offline-First Apps</div>
-<div class="badge">IoT • BLE • NFC</div>
-<div class="badge">Firebase / APIs</div>
-<div class="badge">AWS / Cloud</div>
-<div class="badge">Performance Optimization</div>
+<div>
+  <span class="badge">Flutter (7+ yrs)</span>
+  <span class="badge">Mobile Architecture</span>
+  <span class="badge">System Design</span>
+  <span class="badge">Clean Architecture</span>
+  <span class="badge">Real-Time Systems</span>
+  <span class="badge">Offline-First</span>
+  <span class="badge">IoT • BLE • NFC</span>
+  <span class="badge">Firebase / APIs</span>
+  <span class="badge">AWS / Cloud</span>
+  <span class="badge">Performance Optimization</span>
+</div>
 
 <!-- GITHUB -->
-<h2>💻 Code</h2>
+<h2>💻 Engineering Depth</h2>
 <p>
 <a href="https://github.com/ChiragRathod090" target="_blank">
-👉 github.com/ChiragRathod090
+👉 View GitHub
 </a>
 </p>
 
@@ -148,48 +207,49 @@ Expert in <b>real-time apps, offline-first architecture, and IoT (BLE/NFC)</b>.
 <h2>📊 Case Study: Onkyo Controller</h2>
 
 <div class="card">
+<b>Problem:</b> Real-time IoT device control with low latency and reliability.<br><br>
 
-<b>Problem</b><br>
-Control IoT-based audio devices with real-time responsiveness and reliability.
+<b>Architecture:</b> Clean Architecture (Presentation, Domain, Data), Repository pattern, scalable modules.<br><br>
 
-<br><br>
+<b>System Design:</b>
+- Real-time device communication  
+- State sync between UI & hardware  
+- Low latency command execution  
 
-<b>Architecture</b><br>
-- Clean Architecture (Presentation, Domain, Data layers)<br>
-- Repository pattern for abstraction<br>
-- Modular and scalable code structure
+<br>
 
-<br><br>
+<b>Engineering:</b>
+- Offline handling + reconnect logic  
+- Robust error handling  
+- Optimized network calls  
 
-<b>System Design</b><br>
-- Real-time communication with devices over network<br>
-- Low latency command execution<br>
-- State synchronization between device & UI
+<br>
 
-<br><br>
-
-<b>Key Engineering</b><br>
-- Offline handling & reconnection strategy<br>
-- Error handling for unstable device connections<br>
-- Optimized network calls
-
-<br><br>
-
-<b>Impact</b><br>
-- Smooth device control experience<br>
-- Reliable communication layer<br>
-- Production-ready scalable architecture
-
+<b>Impact:</b>
+- Smooth UX  
+- Reliable device communication  
+- Production-grade scalability  
 </div>
 
 <!-- CONTACT -->
-<h2>🚀 Contact</h2>
-<p>
-Email: rathodchirag090@gmail.com<br>
-Phone: +91-7016862071
-</p>
+<div class="contact">
+  <h2>🚀 Let’s Build Something Scalable</h2>
+  <p>Email: rathodchirag090@gmail.com</p>
+  <p>Phone: +91-7016862071</p>
+</div>
 
 </div>
+
+<script>
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    if (card.getBoundingClientRect().top < window.innerHeight - 50) {
+      card.classList.add('show');
+    }
+  });
+});
+</script>
 
 </body>
 </html>
