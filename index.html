@@ -11,7 +11,7 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: #020617;
+  background: radial-gradient(circle at top, #0f172a, #020617);
   color: #e2e8f0;
 }
 
@@ -36,22 +36,37 @@ h2 {
 
 .hero {
   text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.hero p {
+  color: #94a3b8;
+}
+
+.badges span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 14px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
   margin-top: 30px;
 }
 
 .card {
-  background: #0f172a;
+  background: rgba(30,41,59,0.6);
   padding: 20px;
-  border-radius: 14px;
+  border-radius: 16px;
   transition: 0.4s;
   opacity: 0;
   transform: translateY(40px);
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
 .card.show {
@@ -60,7 +75,14 @@ h2 {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  border-color: #38bdf8;
+}
+
+.card a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 img {
@@ -69,24 +91,24 @@ img {
   margin-top: 10px;
 }
 
-a {
-  color: #38bdf8;
-  text-decoration: none;
-}
-
-.case {
-  background: #0f172a;
-  padding: 25px;
-  border-radius: 14px;
-  margin-top: 20px;
-}
-
 .tech span {
-  background: #0f172a;
-  padding: 8px 12px;
-  border-radius: 10px;
-  margin: 5px;
   display: inline-block;
+  background: #1e293b;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin: 6px;
+  font-size: 14px;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 80px;
+  color: #94a3b8;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
 }
 </style>
 </head>
@@ -95,67 +117,99 @@ a {
 
 <div class="container">
 
+<!-- HERO -->
 <div class="hero">
   <h1>Chirag Rathod</h1>
   <p>Senior Mobile Engineer • Flutter Architect • 9+ Years</p>
-  <p>Building scalable, real-time mobile systems with high performance.</p>
+
+  <div class="badges">
+    <span>🚀 10+ Production Apps</span>
+    <span>⚡ High Performance Systems</span>
+    <span>🧠 Clean Architecture Expert</span>
+  </div>
+
+  <p>
+    I build scalable mobile systems with real-time performance,
+    focusing on architecture, optimization, and production reliability.
+  </p>
 </div>
 
-<h2>🔥 Projects</h2>
+<!-- PROJECTS -->
+<h2>🔥 Selected Work</h2>
+
 <div class="grid">
 
-<div class="card">
-  <h3>INTIX Platform</h3>
-  <p>Event system with real-time QR validation.</p>
+  <div class="card">
+    <h3>INTIX Platform</h3>
+    <p>Real-time event system with QR validation.</p>
+    <a href="intix.html">View Case Study →</a>
+  </div>
+
+  <div class="card">
+    <h3>SODA Camera</h3>
+    <p>High-performance real-time filters.</p>
+    <a href="soda.html">View Case Study →</a>
+  </div>
+
+  <div class="card">
+    <h3>CitySide Sports</h3>
+    <p>Live sports and team management platform.</p>
+  </div>
+
+  <div class="card">
+    <h3>Smart Device Apps</h3>
+    <p>IoT-based real-time device control apps.</p>
+  </div>
+
 </div>
 
-<div class="card">
-  <h3>SODA Camera</h3>
-  <p>Real-time filters with high performance.</p>
-</div>
-
-<div class="card">
-  <h3>CitySide Sports</h3>
-  <p>Live sports platform.</p>
-</div>
-
-</div>
-
+<!-- SCREENSHOTS -->
 <h2>📸 App Screenshots</h2>
+
 <div class="grid">
 
-<div class="card">
-  <img src="https://via.placeholder.com/300x600" />
-  <p>INTIX Scanner</p>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x600" />
+    <p>INTIX Scanner</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x600" />
+    <p>SODA Camera</p>
+  </div>
+
 </div>
 
-<div class="card">
-  <img src="https://via.placeholder.com/300x600" />
-  <p>SODA Camera</p>
-</div>
-
-</div>
-
-<h2>🧠 Case Study: INTIX</h2>
-<div class="case">
-<p><b>Problem:</b> High traffic event validation</p>
-<p><b>Solution:</b> Built QR scanning + real-time sync</p>
-<p><b>Impact:</b> Low latency, high reliability</p>
-</div>
-
-<h2>🧠 Case Study: SODA</h2>
-<div class="case">
-<p><b>Problem:</b> Real-time image processing</p>
-<p><b>Solution:</b> Optimized rendering pipeline</p>
-<p><b>Impact:</b> 60 FPS performance</p>
-</div>
-
+<!-- GITHUB -->
 <h2>💻 GitHub</h2>
-<p><a href="#">github.com/yourprofile</a></p>
+<p>
+  <a href="https://github.com/yourusername" target="_blank">
+    github.com/yourusername
+  </a>
+</p>
 
+<!-- TECH -->
 <h2>🛠 Tech Stack</h2>
+
 <div class="tech">
-<span>Flutter</span><span>Android</span><span>AWS</span><span>Firebase</span>
+  <span>Flutter</span>
+  <span>Dart</span>
+  <span>Kotlin</span>
+  <span>Java</span>
+  <span>Firebase</span>
+  <span>AWS</span>
+  <span>REST APIs</span>
+  <span>SQLite</span>
+  <span>Hive</span>
+  <span>BLE / IoT</span>
+  <span>NFC</span>
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
+  📧 rathodchirag090@gmail.com <br>
+  📱 +91-7016862071 <br>
+  🌍 Open to global opportunities
 </div>
 
 </div>
