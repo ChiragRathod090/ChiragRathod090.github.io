@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chirag Rathod | Mobile Architect</title>
+
+<title>Chirag Rathod | Senior Flutter Architect</title>
+
+<meta name="description" content="Senior Flutter Developer with 9+ years experience building scalable, real-time mobile applications used by thousands of users worldwide. متخصص in system design, performance optimization, and IoT integration.">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -11,18 +14,18 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: radial-gradient(circle at top, #0f172a, #020617);
+  background: radial-gradient(circle at top, #020617, #000);
   color: #e2e8f0;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: auto;
   padding: 60px 20px;
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 58px;
   background: linear-gradient(to right, #38bdf8, #22c55e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,51 +35,58 @@ h1 {
   text-align: center;
 }
 
-.hero p {
+.sub {
   color: #94a3b8;
+  font-size: 18px;
 }
 
-.badges span {
-  display: inline-block;
-  background: #1e293b;
-  padding: 8px 14px;
-  border-radius: 20px;
-  margin: 5px;
-}
-
-.cta {
+.metrics {
   margin-top: 20px;
 }
 
-.cta a {
-  background: #22c55e;
-  color: black;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
+.metrics span {
+  display: inline-block;
+  background: #0f172a;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin: 6px;
   font-weight: 600;
 }
 
+.cta {
+  margin-top: 25px;
+}
+
+.cta a {
+  background: linear-gradient(135deg, #22c55e, #38bdf8);
+  color: black;
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 h2 {
-  margin-top: 80px;
+  margin-top: 90px;
   border-left: 4px solid #38bdf8;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
   margin-top: 30px;
 }
 
 .card {
-  background: rgba(30,41,59,0.6);
-  padding: 20px;
-  border-radius: 16px;
+  background: rgba(15,23,42,0.6);
+  padding: 24px;
+  border-radius: 18px;
   transition: 0.4s;
+  backdrop-filter: blur(10px);
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(50px);
 }
 
 .card.show {
@@ -85,37 +95,37 @@ h2 {
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
+}
+
+.card h3 {
+  margin-top: 0;
 }
 
 .card a {
   color: #38bdf8;
   text-decoration: none;
-}
-
-img {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 10px;
+  font-weight: 600;
 }
 
 .tech span {
   display: inline-block;
-  background: #1e293b;
-  padding: 10px 14px;
+  background: #020617;
+  padding: 10px 16px;
   border-radius: 10px;
   margin: 6px;
 }
 
 .contact {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
-@keyframes fadeIn {
-  from {opacity:0; transform: translateY(20px);}
-  to {opacity:1; transform: translateY(0);}
+.highlight {
+  color: #22c55e;
+  font-weight: bold;
 }
+
 </style>
 </head>
 
@@ -126,93 +136,115 @@ img {
 <!-- HERO -->
 <div class="hero">
   <h1>Chirag Rathod</h1>
-  <p><b>Senior Mobile Engineer • Flutter Architect</b></p>
 
-  <div class="badges">
-    <span>🚀 10+ Production Apps</span>
-    <span>⚡ Real-Time Systems</span>
-    <span>🧠 System Design Focused</span>
-  </div>
-
-  <p>
-    I design and build <b>scalable mobile systems</b> used in production — 
-    optimized for performance, real-time data, and reliability.
+  <p class="sub">
+    Senior Flutter Engineer • Mobile Architect • System Design Specialist
   </p>
 
-  <p style="margin-top:10px; font-size:14px;">
-    Trusted in building apps that handle real users, real load, and real-world complexity.
+  <div class="metrics">
+    <span>🚀 9+ Years Experience</span>
+    <span>📱 20+ Production Apps</span>
+    <span>⚡ Real-Time & Scalable Systems</span>
+    <span>🔗 IoT • BLE • NFC Expertise</span>
+  </div>
+
+  <p style="margin-top:20px; max-width:700px; margin:auto;">
+    I build <span class="highlight">high-performance mobile applications</span> designed for 
+    <b>scale, reliability, and real-world usage</b>. My work powers apps used by 
+    thousands of users across industries including entertainment, IoT, sports, and commerce.
   </p>
 
   <div class="cta">
-    <a href="mailto:rathodchirag090@gmail.com">🚀 Let’s Build Something</a>
+    <a href="mailto:rathodchirag090@gmail.com">🚀 Hire / Interview Me</a>
   </div>
 </div>
 
 <!-- PROJECTS -->
-<h2>🔥 Selected Work</h2>
+<h2>🔥 High-Impact Work (Selected)</h2>
 
 <div class="grid">
 
   <div class="card">
-    <h3>INTIX Platform</h3>
-    <p>Handled high-traffic event validation with optimized QR scanning.</p>
-    <p><b>Result:</b> Reduced latency & improved throughput</p>
-    <a href="intix.html">See how it scales →</a>
+    <h3>INTIX Ecosystem</h3>
+    <p>
+      Built a scalable ticketing and validation system with multiple apps (Scanner, Consumer, Box Office).
+    </p>
+    <p><b>Impact:</b></p>
+    <ul>
+      <li>Handled high concurrency event traffic</li>
+      <li>Optimized QR scanning performance</li>
+      <li>Reduced validation latency significantly</li>
+    </ul>
+    <a href="intix.html">Deep Dive → System Design & Scaling</a>
   </div>
 
   <div class="card">
     <h3>SODA Camera</h3>
-    <p>Real-time image processing with optimized rendering.</p>
-    <p><b>Result:</b> Achieved smooth 60 FPS performance</p>
-    <a href="soda.html">See performance breakdown →</a>
+    <p>
+      Performance-critical camera application with real-time filters and rendering.
+    </p>
+    <p><b>Impact:</b></p>
+    <ul>
+      <li>Maintained smooth 60 FPS rendering</li>
+      <li>Optimized image processing pipeline</li>
+      <li>Improved UI responsiveness</li>
+    </ul>
+    <a href="soda.html">Deep Dive → Performance Engineering</a>
   </div>
 
   <div class="card">
-    <h3>CitySide Sports</h3>
-    <p>Real-time sports updates with scalable architecture.</p>
-    <p><b>Result:</b> Improved user engagement</p>
+    <h3>Onkyo Controller</h3>
+    <p>
+      IoT-based remote control application interacting with hardware devices.
+    </p>
+    <p><b>Impact:</b></p>
+    <ul>
+      <li>Reliable device communication</li>
+      <li>Low-latency command execution</li>
+      <li>Seamless cross-platform experience</li>
+    </ul>
   </div>
 
 </div>
 
-<!-- SCREENSHOTS -->
-<h2>📸 Real Applications</h2>
+<!-- ALL APPS -->
+<h2>📱 Production Applications</h2>
 
-<div class="grid">
-  <div class="card">
-    <img src="https://via.placeholder.com/300x600" />
-    <p>INTIX Scanner</p>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/300x600" />
-    <p>SODA Camera</p>
-  </div>
-</div>
-
-<!-- GITHUB -->
-<h2>💻 Code & Work</h2>
 <p>
-  <a href="https://github.com/yourusername" target="_blank">
-    View GitHub →
-  </a>
+Includes apps like <b>INTIX, Onkyo Controller, Integra Remote, SODA Camera, Cityside Sports, Hangly, VMMNA</b> and more — 
+available on Play Store & App Store.
 </p>
 
 <!-- TECH -->
-<h2>🛠 Tech Stack</h2>
+<h2>🛠 Core Expertise</h2>
+
 <div class="tech">
-  <span>Flutter</span>
-  <span>Android</span>
-  <span>AWS</span>
-  <span>Firebase</span>
-  <span>IoT</span>
+  <span>Flutter (Dart)</span>
+  <span>Android (Java/Kotlin)</span>
+  <span>System Design</span>
+  <span>Clean Architecture</span>
+  <span>Firebase / APIs</span>
+  <span>AWS / Cloud</span>
+  <span>BLE / IoT / NFC</span>
+  <span>Performance Optimization</span>
 </div>
+
+<!-- GITHUB -->
+<h2>💻 Engineering Depth</h2>
+
+<p>
+Explore architecture-level implementations, scalable systems, and real-world engineering decisions:
+</p>
+
+<p>
+<a href="https://github.com/yourusername" target="_blank">👉 View GitHub Projects</a>
+</p>
 
 <!-- CONTACT -->
 <div class="contact">
-  <p><b>Let’s build something impactful.</b></p>
-  📧 rathodchirag090@gmail.com <br>
-  📱 +91-7016862071
+  <h2>🚀 Let’s Build Something Scalable</h2>
+  <p>Email: rathodchirag090@gmail.com</p>
+  <p>Phone: +91-7016862071</p>
 </div>
 
 </div>
@@ -223,7 +255,7 @@ const cards = document.querySelectorAll('.card');
 window.addEventListener('scroll', () => {
   cards.forEach(card => {
     const rect = card.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 50) {
+    if (rect.top < window.innerHeight - 60) {
       card.classList.add('show');
     }
   });
