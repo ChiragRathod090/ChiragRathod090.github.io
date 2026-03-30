@@ -28,15 +28,8 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-h2 {
-  margin-top: 80px;
-  border-left: 4px solid #38bdf8;
-  padding-left: 10px;
-}
-
 .hero {
   text-align: center;
-  animation: fadeIn 1s ease;
 }
 
 .hero p {
@@ -49,7 +42,25 @@ h2 {
   padding: 8px 14px;
   border-radius: 20px;
   margin: 5px;
-  font-size: 14px;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cta a {
+  background: #22c55e;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 80px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 10px;
 }
 
 .grid {
@@ -66,7 +77,6 @@ h2 {
   transition: 0.4s;
   opacity: 0;
   transform: translateY(40px);
-  border: 1px solid rgba(255,255,255,0.05);
 }
 
 .card.show {
@@ -76,13 +86,11 @@ h2 {
 
 .card:hover {
   transform: scale(1.03);
-  border-color: #38bdf8;
 }
 
 .card a {
   color: #38bdf8;
   text-decoration: none;
-  font-weight: 500;
 }
 
 img {
@@ -97,13 +105,11 @@ img {
   padding: 10px 14px;
   border-radius: 10px;
   margin: 6px;
-  font-size: 14px;
 }
 
 .contact {
   text-align: center;
   margin-top: 80px;
-  color: #94a3b8;
 }
 
 @keyframes fadeIn {
@@ -120,18 +126,26 @@ img {
 <!-- HERO -->
 <div class="hero">
   <h1>Chirag Rathod</h1>
-  <p>Senior Mobile Engineer • Flutter Architect • 9+ Years</p>
+  <p><b>Senior Mobile Engineer • Flutter Architect</b></p>
 
   <div class="badges">
     <span>🚀 10+ Production Apps</span>
-    <span>⚡ High Performance Systems</span>
-    <span>🧠 Clean Architecture Expert</span>
+    <span>⚡ Real-Time Systems</span>
+    <span>🧠 System Design Focused</span>
   </div>
 
   <p>
-    I build scalable mobile systems with real-time performance,
-    focusing on architecture, optimization, and production reliability.
+    I design and build <b>scalable mobile systems</b> used in production — 
+    optimized for performance, real-time data, and reliability.
   </p>
+
+  <p style="margin-top:10px; font-size:14px;">
+    Trusted in building apps that handle real users, real load, and real-world complexity.
+  </p>
+
+  <div class="cta">
+    <a href="mailto:rathodchirag090@gmail.com">🚀 Let’s Build Something</a>
+  </div>
 </div>
 
 <!-- PROJECTS -->
@@ -141,33 +155,30 @@ img {
 
   <div class="card">
     <h3>INTIX Platform</h3>
-    <p>Real-time event system with QR validation.</p>
-    <a href="intix.html">View Case Study →</a>
+    <p>Handled high-traffic event validation with optimized QR scanning.</p>
+    <p><b>Result:</b> Reduced latency & improved throughput</p>
+    <a href="intix.html">See how it scales →</a>
   </div>
 
   <div class="card">
     <h3>SODA Camera</h3>
-    <p>High-performance real-time filters.</p>
-    <a href="soda.html">View Case Study →</a>
+    <p>Real-time image processing with optimized rendering.</p>
+    <p><b>Result:</b> Achieved smooth 60 FPS performance</p>
+    <a href="soda.html">See performance breakdown →</a>
   </div>
 
   <div class="card">
     <h3>CitySide Sports</h3>
-    <p>Live sports and team management platform.</p>
-  </div>
-
-  <div class="card">
-    <h3>Smart Device Apps</h3>
-    <p>IoT-based real-time device control apps.</p>
+    <p>Real-time sports updates with scalable architecture.</p>
+    <p><b>Result:</b> Improved user engagement</p>
   </div>
 
 </div>
 
 <!-- SCREENSHOTS -->
-<h2>📸 App Screenshots</h2>
+<h2>📸 Real Applications</h2>
 
 <div class="grid">
-
   <div class="card">
     <img src="https://via.placeholder.com/300x600" />
     <p>INTIX Scanner</p>
@@ -177,39 +188,31 @@ img {
     <img src="https://via.placeholder.com/300x600" />
     <p>SODA Camera</p>
   </div>
-
 </div>
 
 <!-- GITHUB -->
-<h2>💻 GitHub</h2>
+<h2>💻 Code & Work</h2>
 <p>
   <a href="https://github.com/yourusername" target="_blank">
-    github.com/yourusername
+    View GitHub →
   </a>
 </p>
 
 <!-- TECH -->
 <h2>🛠 Tech Stack</h2>
-
 <div class="tech">
   <span>Flutter</span>
-  <span>Dart</span>
-  <span>Kotlin</span>
-  <span>Java</span>
-  <span>Firebase</span>
+  <span>Android</span>
   <span>AWS</span>
-  <span>REST APIs</span>
-  <span>SQLite</span>
-  <span>Hive</span>
-  <span>BLE / IoT</span>
-  <span>NFC</span>
+  <span>Firebase</span>
+  <span>IoT</span>
 </div>
 
 <!-- CONTACT -->
 <div class="contact">
+  <p><b>Let’s build something impactful.</b></p>
   📧 rathodchirag090@gmail.com <br>
-  📱 +91-7016862071 <br>
-  🌍 Open to global opportunities
+  📱 +91-7016862071
 </div>
 
 </div>
