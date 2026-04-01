@@ -53,8 +53,8 @@ a { color: #58a6ff; }
 <h1>SODA Camera – Performance Engineering Case Study</h1>
 
 <p>
-A high-performance camera application with real-time filters and image processing.
-Focused on rendering performance, memory optimization, and smooth user experience.
+A real-time camera application focused on high-performance rendering and smooth user experience. 
+Built to handle live filters, image processing, and consistent performance across devices.
 </p>
 
 <div>
@@ -66,71 +66,87 @@ Focused on rendering performance, memory optimization, and smooth user experienc
 
 <h2>Problem Statement</h2>
 <ul>
-<li>Real-time filters caused frame drops</li>
-<li>High memory usage leading to crashes</li>
-<li>UI lag during camera processing</li>
-<li>Inconsistent performance across devices</li>
+<li>Frame drops during real-time filter usage</li>
+<li>High memory consumption causing instability</li>
+<li>UI lag during heavy processing</li>
+<li>Performance inconsistency across devices</li>
 </ul>
 
 <h2>Solution Overview</h2>
 <ul>
-<li>Optimized rendering pipeline</li>
-<li>Reduced memory footprint</li>
-<li>Implemented efficient frame handling</li>
-<li>Ensured smooth UI interactions</li>
+<li>Designed optimized rendering pipeline</li>
+<li>Implemented efficient memory handling</li>
+<li>Separated UI and processing layers</li>
+<li>Ensured smooth real-time interaction</li>
 </ul>
 
 <h2>Architecture</h2>
 
 <div class="highlight">
-<b>Approach:</b>
+
+<b>Clean Architecture Layers:</b>
+
 <ul>
-<li>Separation of UI and processing layers</li>
-<li>Efficient state management</li>
-<li>Reusable and modular components</li>
+<li><b>Presentation:</b> UI rendering and state management</li>
+<li><b>Domain:</b> Image processing logic</li>
+<li><b>Data:</b> Camera and resource handling</li>
 </ul>
+
+<b>Patterns Used:</b>
+
+<ul>
+<li>Modular Architecture</li>
+<li>Separation of Concerns</li>
+</ul>
+
 </div>
 
 <h2>System Design</h2>
+
 <ul>
-<li>Real-time image processing pipeline</li>
-<li>Frame optimization strategy</li>
-<li>Asynchronous processing to avoid UI blocking</li>
-<li>Efficient resource management</li>
+<li>Real-time frame processing pipeline</li>
+<li>Asynchronous task handling</li>
+<li>Efficient resource utilization</li>
+<li>UI and processing decoupling</li>
 </ul>
 
 <h2>Key Engineering Challenges</h2>
+
 <ul>
 <li>Maintaining 60 FPS rendering</li>
 <li>Handling large image data efficiently</li>
-<li>Reducing memory leaks</li>
-<li>Ensuring smooth experience on low-end devices</li>
+<li>Preventing memory leaks</li>
+<li>Supporting low-end devices</li>
 </ul>
 
 <h2>Solutions Implemented</h2>
+
 <ul>
 <li>Optimized rendering cycles</li>
+<li>Background processing for heavy operations</li>
 <li>Memory cleanup strategies</li>
-<li>Background processing for heavy tasks</li>
-<li>Reduced unnecessary UI rebuilds</li>
+<li>Minimized unnecessary UI rebuilds</li>
 </ul>
 
 <h2>Impact</h2>
+
 <ul>
 <li>Smooth real-time camera experience</li>
-<li>Improved app performance significantly</li>
-<li>Reduced crashes and memory issues</li>
-<li>Consistent performance across devices</li>
+<li>Improved performance and responsiveness</li>
+<li>Reduced crashes significantly</li>
+<li>Consistent behavior across devices</li>
 </ul>
 
 <h2>Key Learnings</h2>
+
 <ul>
-<li>Importance of performance optimization in UI-heavy apps</li>
+<li>Importance of performance optimization</li>
 <li>Handling real-time processing efficiently</li>
-<li>Balancing performance and user experience</li>
+<li>Balancing UX with system constraints</li>
 </ul>
 
 <h2>Navigation</h2>
+
 <p><a href="index.html">← Back to Portfolio</a></p>
 
 </div>
