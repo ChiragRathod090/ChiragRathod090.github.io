@@ -53,8 +53,8 @@ a { color: #58a6ff; }
 <h1>INTIX Platform – Scalable System Case Study</h1>
 
 <p>
-A scalable event and ticketing platform designed to handle high concurrency, real-time validation,
-and offline-first ticket verification.
+A scalable ticketing and event platform designed to handle high concurrency, real-time validation, 
+and offline-first functionality for seamless event operations.
 </p>
 
 <div>
@@ -65,78 +65,90 @@ and offline-first ticket verification.
 </div>
 
 <h2>Problem Statement</h2>
+
 <ul>
-<li>High traffic during events</li>
-<li>Need for offline ticket validation</li>
+<li>High traffic during large-scale events</li>
+<li>Dependency on internet for ticket validation</li>
 <li>Real-time synchronization challenges</li>
-<li>Fast QR scanning requirements</li>
+<li>Slow QR scanning under heavy load</li>
 </ul>
 
 <h2>Solution Overview</h2>
+
 <ul>
-<li>Built scalable architecture for high concurrency</li>
-<li>Implemented offline-first ticket validation</li>
+<li>Designed scalable architecture for concurrency</li>
+<li>Implemented offline-first validation system</li>
 <li>Optimized QR scanning performance</li>
-<li>Ensured real-time sync with backend</li>
+<li>Ensured reliable real-time synchronization</li>
 </ul>
 
 <h2>Architecture</h2>
 
 <div class="highlight">
-<b>Clean Architecture:</b>
+
+<b>Clean Architecture Layers:</b>
+
 <ul>
-<li>Presentation Layer (UI + State)</li>
-<li>Domain Layer (Business Logic)</li>
-<li>Data Layer (Repositories + APIs)</li>
+<li><b>Presentation:</b> UI and scanning interface</li>
+<li><b>Domain:</b> Validation logic and business rules</li>
+<li><b>Data:</b> Repository, APIs, local storage</li>
 </ul>
 
-<b>Patterns:</b>
+<b>Patterns Used:</b>
+
 <ul>
 <li>Repository Pattern</li>
-<li>Modular Structure</li>
+<li>Modular Architecture</li>
 </ul>
+
 </div>
 
 <h2>System Design</h2>
+
 <ul>
-<li>Offline-first validation system</li>
+<li>Offline-first ticket validation system</li>
 <li>Real-time data synchronization</li>
 <li>High-performance QR scanning pipeline</li>
-<li>Scalable backend integration</li>
+<li>Scalable backend communication</li>
 </ul>
 
 <h2>Key Engineering Challenges</h2>
+
 <ul>
 <li>Handling large concurrent users</li>
-<li>Ensuring data consistency offline & online</li>
-<li>Optimizing scanning speed</li>
-<li>Reducing API load during peak events</li>
+<li>Ensuring offline and online data consistency</li>
+<li>Maintaining fast scanning speed</li>
+<li>Reducing server load during peak events</li>
 </ul>
 
 <h2>Solutions Implemented</h2>
+
 <ul>
-<li>Local data caching for offline usage</li>
-<li>Sync mechanism for consistency</li>
-<li>Optimized API calls</li>
-<li>Efficient QR scanning algorithms</li>
+<li>Local caching for offline validation</li>
+<li>Efficient sync strategy</li>
+<li>Optimized API interactions</li>
+<li>Fast and reliable scanning implementation</li>
 </ul>
 
 <h2>Impact</h2>
+
 <ul>
-<li>Reliable event ticket validation</li>
-<li>Handled high concurrency smoothly</li>
-<li>Reduced dependency on network availability</li>
-<li>Improved operational efficiency during events</li>
+<li>Reliable ticket validation system</li>
+<li>Smooth handling of high user load</li>
+<li>Reduced dependency on network</li>
+<li>Improved event operations efficiency</li>
 </ul>
 
 <h2>Key Learnings</h2>
+
 <ul>
-<li>Designing systems for scale</li>
-<li>Offline-first architecture importance</li>
+<li>Designing for scalability</li>
+<li>Importance of offline-first systems</li>
 <li>Balancing performance with reliability</li>
 </ul>
 
 <h2>Navigation</h2>
+
 <p><a href="index.html">← Back to Portfolio</a></p>
 
 </div>
