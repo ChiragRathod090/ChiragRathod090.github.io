@@ -3,50 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INTIX Case Study | Chirag Rathod</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>INTIX Platform | Case Study</title>
 
 <style>
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background: #020617;
-  color: #e2e8f0;
+  background: #0b1220;
+  color: #e6edf3;
+  line-height: 1.6;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 30px;
 }
 
-h1 {
-  font-size: 42px;
-  color: #38bdf8;
-}
+h1 { font-size: 32px; }
+h2 { margin-top: 30px; border-bottom: 1px solid #1f2937; padding-bottom: 5px; }
 
-h2 {
-  margin-top: 40px;
-  border-left: 4px solid #22c55e;
-  padding-left: 10px;
-}
+ul { padding-left: 20px; }
 
-p {
-  color: #94a3b8;
-  line-height: 1.7;
-}
-
-.block {
-  background: #0f172a;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 20px;
+.tag {
+  display: inline-block;
+  background: #111827;
+  padding: 6px 10px;
+  margin: 5px 5px 5px 0;
+  border-radius: 6px;
+  font-size: 12px;
 }
 
 .highlight {
-  color: #22c55e;
+  background: #111827;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
 }
+
+a { color: #58a6ff; }
 </style>
 </head>
 
@@ -54,59 +50,94 @@ p {
 
 <div class="container">
 
-<h1>INTIX Platform — Case Study</h1>
-<p>Real-time event management system handling high-traffic environments.</p>
+<h1>INTIX Platform – Scalable System Case Study</h1>
 
-<h2>🚨 Problem</h2>
-<div class="block">
 <p>
-Event platforms fail during peak traffic due to slow validation and server dependency.
-Users face long queues and poor experience.
+A scalable event and ticketing platform designed to handle high concurrency, real-time validation,
+and offline-first ticket verification.
 </p>
+
+<div>
+<span class="tag">Flutter</span>
+<span class="tag">Scalability</span>
+<span class="tag">Offline First</span>
+<span class="tag">Real-time Sync</span>
 </div>
 
-<h2>💡 Solution</h2>
-<div class="block">
-<p>
-Designed a <span class="highlight">real-time QR validation system</span> with optimized API communication and fallback mechanisms.
-</p>
+<h2>Problem Statement</h2>
+<ul>
+<li>High traffic during events</li>
+<li>Need for offline ticket validation</li>
+<li>Real-time synchronization challenges</li>
+<li>Fast QR scanning requirements</li>
+</ul>
+
+<h2>Solution Overview</h2>
+<ul>
+<li>Built scalable architecture for high concurrency</li>
+<li>Implemented offline-first ticket validation</li>
+<li>Optimized QR scanning performance</li>
+<li>Ensured real-time sync with backend</li>
+</ul>
+
+<h2>Architecture</h2>
+
+<div class="highlight">
+<b>Clean Architecture:</b>
+<ul>
+<li>Presentation Layer (UI + State)</li>
+<li>Domain Layer (Business Logic)</li>
+<li>Data Layer (Repositories + APIs)</li>
+</ul>
+
+<b>Patterns:</b>
+<ul>
+<li>Repository Pattern</li>
+<li>Modular Structure</li>
+</ul>
 </div>
 
-<h2>🏗 Architecture</h2>
-<div class="block">
-<p>
-- Clean Architecture (Presentation → Domain → Data)  
-- Offline-first validation strategy  
-- Scalable backend communication  
-</p>
-</div>
+<h2>System Design</h2>
+<ul>
+<li>Offline-first validation system</li>
+<li>Real-time data synchronization</li>
+<li>High-performance QR scanning pipeline</li>
+<li>Scalable backend integration</li>
+</ul>
 
-<h2>⚡ Challenges</h2>
-<div class="block">
-<p>
-- Handling thousands of scans per minute  
-- Network instability in event venues  
-- Maintaining low latency validation  
-</p>
-</div>
+<h2>Key Engineering Challenges</h2>
+<ul>
+<li>Handling large concurrent users</li>
+<li>Ensuring data consistency offline & online</li>
+<li>Optimizing scanning speed</li>
+<li>Reducing API load during peak events</li>
+</ul>
 
-<h2>🚀 Optimizations</h2>
-<div class="block">
-<p>
-- Local caching for instant validation  
-- Batch sync with backend  
-- Efficient QR parsing algorithm  
-</p>
-</div>
+<h2>Solutions Implemented</h2>
+<ul>
+<li>Local data caching for offline usage</li>
+<li>Sync mechanism for consistency</li>
+<li>Optimized API calls</li>
+<li>Efficient QR scanning algorithms</li>
+</ul>
 
-<h2>📈 Impact</h2>
-<div class="block">
-<p>
-<span class="highlight">✔ Reduced validation time significantly</span><br>
-<span class="highlight">✔ Improved event throughput</span><br>
-<span class="highlight">✔ Reliable under high load</span>
-</p>
-</div>
+<h2>Impact</h2>
+<ul>
+<li>Reliable event ticket validation</li>
+<li>Handled high concurrency smoothly</li>
+<li>Reduced dependency on network availability</li>
+<li>Improved operational efficiency during events</li>
+</ul>
+
+<h2>Key Learnings</h2>
+<ul>
+<li>Designing systems for scale</li>
+<li>Offline-first architecture importance</li>
+<li>Balancing performance with reliability</li>
+</ul>
+
+<h2>Navigation</h2>
+<p><a href="index.html">← Back to Portfolio</a></p>
 
 </div>
 
