@@ -3,50 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SODA Case Study | Chirag Rathod</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>SODA Camera | Case Study</title>
 
 <style>
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background: #020617;
-  color: #e2e8f0;
+  background: #0b1220;
+  color: #e6edf3;
+  line-height: 1.6;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 30px;
 }
 
-h1 {
-  font-size: 42px;
-  color: #38bdf8;
-}
+h1 { font-size: 32px; }
+h2 { margin-top: 30px; border-bottom: 1px solid #1f2937; padding-bottom: 5px; }
 
-h2 {
-  margin-top: 40px;
-  border-left: 4px solid #22c55e;
-  padding-left: 10px;
-}
+ul { padding-left: 20px; }
 
-p {
-  color: #94a3b8;
-  line-height: 1.7;
-}
-
-.block {
-  background: #0f172a;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 20px;
+.tag {
+  display: inline-block;
+  background: #111827;
+  padding: 6px 10px;
+  margin: 5px 5px 5px 0;
+  border-radius: 6px;
+  font-size: 12px;
 }
 
 .highlight {
-  color: #22c55e;
+  background: #111827;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
 }
+
+a { color: #58a6ff; }
 </style>
 </head>
 
@@ -54,58 +50,88 @@ p {
 
 <div class="container">
 
-<h1>SODA Camera — Case Study</h1>
-<p>High-performance real-time image processing application.</p>
+<h1>SODA Camera – Performance Engineering Case Study</h1>
 
-<h2>🚨 Problem</h2>
-<div class="block">
 <p>
-Real-time filters cause lag, frame drops, and memory issues on mobile devices.
+A high-performance camera application with real-time filters and image processing.
+Focused on rendering performance, memory optimization, and smooth user experience.
 </p>
+
+<div>
+<span class="tag">Flutter</span>
+<span class="tag">Performance</span>
+<span class="tag">Rendering</span>
+<span class="tag">Real-time Processing</span>
 </div>
 
-<h2>💡 Solution</h2>
-<div class="block">
-<p>
-Built an optimized rendering pipeline ensuring <span class="highlight">smooth real-time processing</span>.
-</p>
+<h2>Problem Statement</h2>
+<ul>
+<li>Real-time filters caused frame drops</li>
+<li>High memory usage leading to crashes</li>
+<li>UI lag during camera processing</li>
+<li>Inconsistent performance across devices</li>
+</ul>
+
+<h2>Solution Overview</h2>
+<ul>
+<li>Optimized rendering pipeline</li>
+<li>Reduced memory footprint</li>
+<li>Implemented efficient frame handling</li>
+<li>Ensured smooth UI interactions</li>
+</ul>
+
+<h2>Architecture</h2>
+
+<div class="highlight">
+<b>Approach:</b>
+<ul>
+<li>Separation of UI and processing layers</li>
+<li>Efficient state management</li>
+<li>Reusable and modular components</li>
+</ul>
 </div>
 
-<h2>🏗 Architecture</h2>
-<div class="block">
-<p>
-- Efficient rendering pipeline  
-- Optimized memory management  
-- Platform-level performance tuning  
-</p>
-</div>
+<h2>System Design</h2>
+<ul>
+<li>Real-time image processing pipeline</li>
+<li>Frame optimization strategy</li>
+<li>Asynchronous processing to avoid UI blocking</li>
+<li>Efficient resource management</li>
+</ul>
 
-<h2>⚡ Challenges</h2>
-<div class="block">
-<p>
-- Maintaining 60 FPS  
-- Handling device variability  
-- Managing memory leaks  
-</p>
-</div>
+<h2>Key Engineering Challenges</h2>
+<ul>
+<li>Maintaining 60 FPS rendering</li>
+<li>Handling large image data efficiently</li>
+<li>Reducing memory leaks</li>
+<li>Ensuring smooth experience on low-end devices</li>
+</ul>
 
-<h2>🚀 Optimizations</h2>
-<div class="block">
-<p>
-- Reduced unnecessary re-renders  
-- Efficient image processing  
-- Resource lifecycle management  
-</p>
-</div>
+<h2>Solutions Implemented</h2>
+<ul>
+<li>Optimized rendering cycles</li>
+<li>Memory cleanup strategies</li>
+<li>Background processing for heavy tasks</li>
+<li>Reduced unnecessary UI rebuilds</li>
+</ul>
 
-<h2>📈 Impact</h2>
-<div class="block">
-<p>
-<span class="highlight">✔ Achieved smooth 30–60 FPS</span><br>
-<span class="highlight">✔ Stable across devices</span><br>
-<span class="highlight">✔ Improved user experience</span>
-</p>
-</div>
+<h2>Impact</h2>
+<ul>
+<li>Smooth real-time camera experience</li>
+<li>Improved app performance significantly</li>
+<li>Reduced crashes and memory issues</li>
+<li>Consistent performance across devices</li>
+</ul>
+
+<h2>Key Learnings</h2>
+<ul>
+<li>Importance of performance optimization in UI-heavy apps</li>
+<li>Handling real-time processing efficiently</li>
+<li>Balancing performance and user experience</li>
+</ul>
+
+<h2>Navigation</h2>
+<p><a href="index.html">← Back to Portfolio</a></p>
 
 </div>
 
