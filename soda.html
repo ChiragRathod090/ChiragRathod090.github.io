@@ -7,39 +7,36 @@
 <title>SODA Camera | Case Study</title>
 
 <style>
+/* SAME STYLE AS INDEX */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   background: #0b1220;
   color: #e6edf3;
-  line-height: 1.6;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 30px;
 }
 
-h1 { font-size: 32px; }
-h2 { margin-top: 30px; border-bottom: 1px solid #1f2937; padding-bottom: 5px; }
+h1 { font-size: 34px; }
+h2 { margin-top: 40px; border-bottom: 1px solid #1f2937; }
 
-ul { padding-left: 20px; }
-
-.tag {
-  display: inline-block;
+.card {
   background: #111827;
-  padding: 6px 10px;
-  margin: 5px 5px 5px 0;
-  border-radius: 6px;
-  font-size: 12px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-.highlight {
-  background: #111827;
-  padding: 15px;
-  border-radius: 8px;
-  margin-top: 15px;
+.tag {
+  background: #1f2937;
+  padding: 6px 10px;
+  margin: 5px;
+  border-radius: 6px;
+  display: inline-block;
 }
 
 a { color: #58a6ff; }
@@ -50,104 +47,59 @@ a { color: #58a6ff; }
 
 <div class="container">
 
-<h1>SODA Camera – Performance Engineering Case Study</h1>
+<h1>SODA Camera – Performance Case Study</h1>
 
-<p>
-A real-time camera application focused on high-performance rendering and smooth user experience. 
-Built to handle live filters, image processing, and consistent performance across devices.
-</p>
+<p>High-performance camera app handling real-time rendering and smooth UI interactions.</p>
 
 <div>
 <span class="tag">Flutter</span>
 <span class="tag">Performance</span>
 <span class="tag">Rendering</span>
-<span class="tag">Real-time Processing</span>
 </div>
 
 <h2>Problem Statement</h2>
+<div class="card">
 <ul>
-<li>Frame drops during real-time filter usage</li>
-<li>High memory consumption causing instability</li>
-<li>UI lag during heavy processing</li>
-<li>Performance inconsistency across devices</li>
+<li>Frame drops during usage</li>
+<li>High memory consumption</li>
+<li>UI lag</li>
 </ul>
+</div>
 
-<h2>Solution Overview</h2>
+<h2>Solution</h2>
+<div class="card">
 <ul>
-<li>Designed optimized rendering pipeline</li>
-<li>Implemented efficient memory handling</li>
-<li>Separated UI and processing layers</li>
-<li>Ensured smooth real-time interaction</li>
+<li>Optimized rendering pipeline</li>
+<li>Background processing</li>
+<li>Efficient memory handling</li>
 </ul>
+</div>
 
 <h2>Architecture</h2>
-
-<div class="highlight">
-
-<b>Clean Architecture Layers:</b>
-
+<div class="card">
 <ul>
-<li><b>Presentation:</b> UI rendering and state management</li>
-<li><b>Domain:</b> Image processing logic</li>
-<li><b>Data:</b> Camera and resource handling</li>
+<li>Clean Architecture</li>
+<li>Separated UI & processing layers</li>
 </ul>
-
-<b>Patterns Used:</b>
-
-<ul>
-<li>Modular Architecture</li>
-<li>Separation of Concerns</li>
-</ul>
-
 </div>
 
 <h2>System Design</h2>
-
+<div class="card">
 <ul>
-<li>Real-time frame processing pipeline</li>
-<li>Asynchronous task handling</li>
-<li>Efficient resource utilization</li>
-<li>UI and processing decoupling</li>
+<li>Real-time frame processing</li>
+<li>Async operations</li>
 </ul>
-
-<h2>Key Engineering Challenges</h2>
-
-<ul>
-<li>Maintaining 60 FPS rendering</li>
-<li>Handling large image data efficiently</li>
-<li>Preventing memory leaks</li>
-<li>Supporting low-end devices</li>
-</ul>
-
-<h2>Solutions Implemented</h2>
-
-<ul>
-<li>Optimized rendering cycles</li>
-<li>Background processing for heavy operations</li>
-<li>Memory cleanup strategies</li>
-<li>Minimized unnecessary UI rebuilds</li>
-</ul>
+</div>
 
 <h2>Impact</h2>
-
+<div class="card">
 <ul>
-<li>Smooth real-time camera experience</li>
-<li>Improved performance and responsiveness</li>
-<li>Reduced crashes significantly</li>
-<li>Consistent behavior across devices</li>
+<li>Smooth performance</li>
+<li>Reduced crashes</li>
 </ul>
+</div>
 
-<h2>Key Learnings</h2>
-
-<ul>
-<li>Importance of performance optimization</li>
-<li>Handling real-time processing efficiently</li>
-<li>Balancing UX with system constraints</li>
-</ul>
-
-<h2>Navigation</h2>
-
-<p><a href="index.html">← Back to Portfolio</a></p>
+<p><a href="index.html">← Back</a></p>
 
 </div>
 
