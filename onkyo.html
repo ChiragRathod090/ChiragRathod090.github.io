@@ -8,41 +8,41 @@
 
 <style>
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   background: #0b1220;
   color: #e6edf3;
   line-height: 1.6;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 30px;
 }
 
-h1 { font-size: 32px; }
-h2 { margin-top: 30px; border-bottom: 1px solid #1f2937; padding-bottom: 5px; }
+h1 { font-size: 34px; }
+h2 { margin-top: 40px; border-bottom: 1px solid #1f2937; padding-bottom: 5px; }
 
-ul { padding-left: 20px; }
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
 
 .tag {
   display: inline-block;
-  background: #111827;
+  background: #1f2937;
   padding: 6px 10px;
   margin: 5px 5px 5px 0;
   border-radius: 6px;
   font-size: 12px;
 }
 
-.highlight {
-  background: #111827;
-  padding: 15px;
-  border-radius: 8px;
-  margin-top: 15px;
-}
+a { color: #58a6ff; text-decoration: none; }
 
-a { color: #58a6ff; }
+ul { padding-left: 20px; }
 </style>
 </head>
 
@@ -50,117 +50,74 @@ a { color: #58a6ff; }
 
 <div class="container">
 
-<h1>Onkyo Controller – IoT System Case Study</h1>
+<h1>Onkyo Controller – System Design Case Study</h1>
 
-<p>
-A real-time mobile application designed to control IoT-based AV receivers over a local network. 
-Focused on low-latency communication, high reliability, and seamless device interaction.
-</p>
+<p>Real-time IoT-based device control application with low-latency communication and reliable state synchronization.</p>
 
 <div>
 <span class="tag">Flutter</span>
 <span class="tag">IoT</span>
+<span class="tag">Real-time</span>
 <span class="tag">System Design</span>
-<span class="tag">Clean Architecture</span>
-<span class="tag">Real-time Communication</span>
 </div>
 
-<!-- PROBLEM -->
 <h2>Problem Statement</h2>
-
+<div class="card">
 <ul>
-<li>Devices operate on unstable local networks</li>
-<li>High latency affects user experience</li>
-<li>No consistent state between device and UI</li>
-<li>Frequent disconnections and packet loss</li>
+<li>Unstable device connectivity</li>
+<li>High latency in command execution</li>
+<li>State mismatch between UI and device</li>
+<li>Network dependency issues</li>
 </ul>
-
-<!-- SOLUTION -->
-<h2>Solution Overview</h2>
-
-<ul>
-<li>Designed real-time communication layer using TCP/UDP</li>
-<li>Implemented state synchronization engine</li>
-<li>Built offline-first interaction handling</li>
-<li>Ensured low latency command execution</li>
-</ul>
-
-<!-- ARCHITECTURE -->
-<h2>Architecture</h2>
-
-<div class="highlight">
-
-<b>Clean Architecture Layers:</b>
-
-<ul>
-<li><b>Presentation:</b> Flutter UI + State Management</li>
-<li><b>Domain:</b> Business logic, use cases</li>
-<li><b>Data:</b> Repository + network/device communication</li>
-</ul>
-
-<b>Patterns Used:</b>
-
-<ul>
-<li>Repository Pattern</li>
-<li>Dependency Injection</li>
-<li>Modular Structure</li>
-</ul>
-
 </div>
 
-<!-- SYSTEM DESIGN -->
+<h2>Solution Overview</h2>
+<div class="card">
+<ul>
+<li>Real-time communication architecture</li>
+<li>Efficient state synchronization</li>
+<li>Robust error handling</li>
+<li>Low-latency command pipeline</li>
+</ul>
+</div>
+
+<h2>Architecture</h2>
+<div class="card">
+<ul>
+<li>Clean Architecture (Presentation, Domain, Data)</li>
+<li>Repository Pattern</li>
+<li>Modular structure</li>
+</ul>
+</div>
+
 <h2>System Design</h2>
-
+<div class="card">
 <ul>
-<li>Real-time device communication over local network</li>
-<li>Command queue system for reliability</li>
+<li>Real-time device communication</li>
+<li>Low-latency execution</li>
 <li>State sync between device & UI</li>
-<li>Retry mechanism for failed commands</li>
 </ul>
+</div>
 
-<!-- ENGINEERING -->
 <h2>Key Engineering Challenges</h2>
-
+<div class="card">
 <ul>
-<li>Handling unstable WiFi connections</li>
-<li>Maintaining consistent device state</li>
-<li>Low latency execution (<100ms)</li>
-<li>Efficient parsing of device responses</li>
+<li>Handling unstable connections</li>
+<li>Maintaining real-time sync</li>
+<li>Reducing latency</li>
 </ul>
+</div>
 
-<!-- SOLUTIONS -->
-<h2>Solutions Implemented</h2>
-
-<ul>
-<li>Reconnection strategy with exponential backoff</li>
-<li>Local caching of device state</li>
-<li>Optimized network calls</li>
-<li>Error handling for device unavailability</li>
-</ul>
-
-<!-- IMPACT -->
 <h2>Impact</h2>
-
+<div class="card">
 <ul>
-<li>Smooth real-time device control</li>
-<li>Reduced latency significantly</li>
-<li>Improved reliability of communication</li>
-<li>Production-ready scalable architecture</li>
+<li>Smooth device control experience</li>
+<li>Reliable communication layer</li>
+<li>Scalable production-ready system</li>
 </ul>
+</div>
 
-<!-- LEARNINGS -->
-<h2>Key Learnings</h2>
-
-<ul>
-<li>Designing for unreliable networks</li>
-<li>Building real-time systems in mobile</li>
-<li>Importance of architecture for scalability</li>
-</ul>
-
-<!-- BACK -->
-<h2>Navigation</h2>
-
-<p><a href="index.html">← Back to Portfolio</a></p>
+<p><a href="index.html">← Back</a></p>
 
 </div>
 
